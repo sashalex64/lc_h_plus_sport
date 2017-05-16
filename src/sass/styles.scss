@@ -1,0 +1,7 @@
+$bodytext: red;
+$bg-color: blue;
+
+body {
+	color: lighten($bodytext, 35);
+	background-color: lighten(desaturate($bg-color, 25), 25);
+}
