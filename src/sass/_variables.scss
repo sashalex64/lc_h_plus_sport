@@ -15,3 +15,22 @@ $yellow-green2		: #bfc406;
 $yellow-green3		: #acb005;
 $brown				: #312a10;
 $black				: #000000;
+
+// Layout:
+$spacing			: 15px;
+
+// Font :
+$em-size			: 140%;
+// $section-px			: 20px;
+// $section-rem		: 2rem;
+$section: 2;
+
+// Z-indexes
+$z-1: 1; // general basic positioning
+$z-2: 2; // general basic positioning
+$z-3: 3; // general basic positioning
+$popup: 100; // tooltips
+$modal-backdrop: 999; // transparent black backdrop behind modal popup
+$modal-container: 1000;
+$modal-content: 1001;
+$modal-controls: 1100; // e.g. close button

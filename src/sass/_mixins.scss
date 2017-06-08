@@ -1,0 +1,21 @@
+@mixin list-reset() {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+@mixin em {
+	color: $gold2;
+	font-size: $em-size;
+	font-style: normal;
+}
+// ... tri tacke su da bi se u values moglo uneti vise arhumenata
+@mixin rem-px($property, $remValues...) {
+	$pxs:();
+	$rems:();
+	@each $value in $remValues {
+		$pxs: append($pxs, $value * 10 + px, space);
+		$rems: append($rems, $value + rem, space);
+	}
+	#{$property}:$pxs;
+	#{$property}:$rems;
+}
