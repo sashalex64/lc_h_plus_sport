@@ -231,7 +231,7 @@ em {
 
 /* Modules */
 
-.header {
+/* .header {
   background: -webkit-linear-gradient(top, rgba($black, 0.2), rgba($black, 0.5)), url('../images/running.jpg');
   background: linear-gradient(to bottom, rgba($black, 0.2), rgba($black, 0.5)), url('../images/running.jpg');
   background-repeat: no-repeat;
@@ -242,20 +242,14 @@ em {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   text-align: center;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
+  // -webkit-box-orient: vertical;
+  // -webkit-box-direction: normal;
+  // -webkit-flex-direction: column;
+  // -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
   justify-content: space-between;
-}
+} */
 
 @include media('screen', '>=phone-landscape') {
   .header {
@@ -481,12 +475,7 @@ em {
 
 #products .product-list {
   @include list-reset();
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
   flex-flow: row wrap;
   .product-item {
     width: 50%;
@@ -598,16 +587,8 @@ em {
 
 @include media('screen', '>=phone-landscape') {
   #people .people-cards {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
     justify-content: space-between;
   }
 }
