@@ -2,7 +2,7 @@
 $white				: #ffffff;
 $yellow				: #ffff00;
 $orange				: #ffb12f;
-$gold				: #f5dc73; /* #f5da6a */
+$gold				: #f5dc73; // #f5da6a 
 $gold2				: #f3d350;
 $orange2			: #f2a82d;
 $off-white			: #f0eff4;
@@ -34,3 +34,13 @@ $modal-backdrop: 999; // transparent black backdrop behind modal popup
 $modal-container: 1000;
 $modal-content: 1001;
 $modal-controls: 1100; // e.g. close button
+
+
+
+// breakpoints:
+
+$breakpoints: (
+	'phone-landscape'	: 600px,
+	'desktop'			: 900px,
+	'wide'				: 1200px
+);

@@ -9,6 +9,8 @@ var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var wait = require('gulp-wait');
 
+// za include-media nije potrebno ovde definisati var, samo includePath u sass tasku i @import u glavnom scss fajlu
+
 //sources and destinations
 
 var sassSource = 'src/sass/*.scss';
@@ -23,7 +25,8 @@ gulp.task('sassCompile', function () {
         .pipe(wait(100))
         .pipe(sourcemaps.init())
         .pipe(sass({
-                outputStyle: 'expanded'
+                outputStyle: 'expanded',
+                includePaths: ['node_modules/include-media/dist']
             })
             .on('error', sass.logError))
         .pipe(autoprefixer('last 10 versions'))
