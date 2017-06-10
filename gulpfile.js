@@ -5,6 +5,7 @@ var sass = require('gulp-sass');
 var connect = require('gulp-connect');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var bourbon = require('node-bourbon').includePaths;
 // var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var wait = require('gulp-wait');
@@ -26,7 +27,7 @@ gulp.task('sassCompile', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({
                 outputStyle: 'expanded',
-                includePaths: ['node_modules/include-media/dist']
+                includePaths: ['node_modules/bourbon/app/assets/stylesheets','node_modules/include-media/dist']
             })
             .on('error', sass.logError))
         .pipe(autoprefixer('last 10 versions'))
